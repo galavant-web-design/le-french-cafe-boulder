@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'Neue Aachen';
+    src: url('webfonts/neue-aachen-std-medium.eot');
+    src: url('webfonts/neue-aachen-std-medium.eot?#iefix') format('embedded-opentype'), url('webfonts/neue-aachen-std-medium.woff2') format('woff2'), url('webfonts/neue-aachen-std-medium.woff') format('woff'), url('webfonts/neue-aachen-std-medium.ttf') format('truetype');
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Helvetica', sans-serif;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'Neue Aachen', serif;
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    line-height: 1.3;
+}
+
+img {
+    height: 25rem;
+    margin-bottom: 2rem;
+}
