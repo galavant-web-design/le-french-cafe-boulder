@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
 @font-face {
     font-family: 'Neue Aachen';
     src: url('webfonts/neue-aachen-std-medium.eot');
@@ -14,7 +16,7 @@ html {
 }
 
 body {
-    font-family: 'Helvetica', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     padding-left: 14rem;
 
     background-color: #fafafa;
