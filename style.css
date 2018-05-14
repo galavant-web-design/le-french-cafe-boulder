@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700');
+
 
 @font-face {
     font-family: 'Neue Aachen';
@@ -11,7 +12,7 @@
 }
 
 html {
-    font-size: 16px;
+    font-size: 18px;
     color: #222222;
 }
 
@@ -29,6 +30,12 @@ h1 {
 }
 
 h2 {
+    font-family: 'Neue Aachen', serif;
+    font-size: 1.75rem;
+    margin-bottom: .6rem;
+}
+
+h3 {
     font-family: 'Neue Aachen', serif;
     margin-bottom: .5rem;
 }
@@ -61,8 +68,8 @@ nav ul {
 
 nav li {
     font-family: 'Neue Aachen', serif;
-    font-size: 1.3rem;
-    text-transform: uppercase;
+    font-size: 1.1rem;
+    text-transform: capitalize;
 }
 
 nav li:not(:last-child) {
@@ -72,6 +79,11 @@ nav li:not(:last-child) {
 nav a {
     color: #222222;
     text-decoration: none;
+}
+
+nav h1 {
+    font-variant: all-small-caps;
+    font-size: 2rem;
 }
 
 .social {
@@ -86,21 +98,15 @@ nav a {
 footer {
     font-size: .8rem;
     text-align: center;
-
     margin-top: auto;
 }
 
-main {
+section {
     padding: 2rem;
-}
-
-#photos {
     display: flex;
-    flex-wrap: wrap;
 }
 
 article {
-    width: calc(50% - .5rem);
     margin-bottom: 1rem;
 }
 
@@ -112,6 +118,68 @@ article img {
     width: 100%;
 }
 
+dt {
+    font-weight: 700;
+}
+
+dd {
+    margin-bottom: .6rem;
+}
+
+.info article {
+    flex: 1;
+    margin-bottom: 0;
+}
+
+.info article + article {
+    flex: 2;
+}
+
+#photos {
+    flex-wrap: wrap;
+}
+
+#photos article {
+    width: calc(50% - .5rem);
+}
+
+#hours-location {
+    background-color: #14AAA3;
+    color: white;
+}
+
+#map {
+    width: 100%;
+    height: 60%;
+}
+
+#about {
+    padding-right: 0;
+}
+
+#about img {
+    margin-bottom: -2rem;
+    margin-top: -4rem;
+}
+
 .description {
     padding: 1rem;
+}
+
+.call-out {
+    padding: 3rem;
+}
+
+.call-out h2 {
+    margin: 0 auto;
+}
+
+.call-out.primary {
+    background-image: url("images/marble-background.jpg");
+    padding-bottom: 5rem;
+}
+
+.call-out.secondary {
+    background-color: #14AAA3;
+    color: white;
 }
