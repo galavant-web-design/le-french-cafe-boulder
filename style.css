@@ -162,6 +162,10 @@ dd {
     margin-top: -4rem;
 }
 
+#menu {
+    flex-direction: column;
+}
+
 .description {
     padding: 1rem;
 }
