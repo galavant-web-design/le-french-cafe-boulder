@@ -21,6 +21,7 @@
 
     <link rel="icon" type="image/png" href="favicon.png" sizes="64x64">
 </head>
+
 <body>
 <nav>
     <h1><a href="#main">Le French Café</a></h1>
@@ -28,6 +29,7 @@
         <li><a href="#hours-contact">hours &amp; contact</a></li>
         <li><a href="menu.pdf" target="_blank" class="external-link">menu</a></li>
         <li><a href="#about">about</a></li>
+        <li><a href="#press">press</a></li>
     </ul>
 
     <div class="social">
@@ -36,8 +38,6 @@
         <a href="https://www.yelp.com/biz/le-french-cafe-boulder-2"><img src="images/yelp.svg" alt="yelp icon"></a>
 
     </div>
-
-    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Flefrenchcafeboulder%2F&tabs=timeline&width=180&height=500&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=true&appId" width="180" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
 
     <footer>
         <p>
@@ -51,44 +51,49 @@
 </nav>
 
 <main id="main">
-    <section id="photos">
+    <section>
         <article>
+            <img src="images/logo.svg" alt="Le French Café logo">
+            <p>
+                Welcome to Le French Café, in Boulder, Colorado. Visit our Facebook page for upcoming events,
+                announcements
+                and our latest menu features. Merci de votre visite!
+            </p>
+        </article>
+        <article>
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Flefrenchcafeboulder%2F&tabs=timeline&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                    width="500" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                    allowTransparency="true" allow="encrypted-media"></iframe>
+        </article>
+    </section>
+
+    <section class="photos">
+        <div class="photo">
             <img src="images/IMG_0194.JPG" alt="yum">
             <div class="description">
                 Croq' madame with house salad
             </div>
-        </article>
-        <article>
+        </div>
+        <div class="photo">
             <img src="images/IMG_0232.JPG" alt="yum">
             <div class="description">
                 Iced Mocha
             </div>
-        </article>
-        <article>
-            <img src="images/IMG_0247.JPG" alt="yum">
-            <div class="description">
-                Galette des Rois | King's Cake
-            </div>
-        </article>
-        <article>
+        </div>
+        <div class="photo">
             <img src="images/IMG_0399.JPG" alt="yum">
             <div class="description">
                 Cappuchino with Chocolate Chip Croissant
             </div>
-        </article>
-        <article>
-            <img src="images/IMG_0432.JPG" alt="yum">
-            <div class="description">
-                Mixed Pastries and Cakes
-            </div>
-        </article>
-        <article>
+        </div>
+        <div class="photo">
             <img src="images/IMG_0435.JPG" alt="yum">
             <div class="description">
                 Homemade Macarons
             </div>
-        </article>
+        </div>
     </section>
+
     <section id="hours-contact" class="info highlight">
         <article>
             <h2>Hours</h2>
@@ -101,7 +106,8 @@
                 <dd>7:30am&ndash;4:30pm</dd>
             </dl>
             <p>
-                Our kitchen closes daily at 3:30pm and we are closed on Mondays. Join us during our open hours for breakfast, lunch or coffee and pastries!
+                Our kitchen closes daily at 3:30pm and we are closed on Mondays. Join us during our open hours for
+                breakfast, lunch or coffee and pastries!
             </p>
 
             <h2>Contact</h2>
@@ -138,7 +144,8 @@
             </h2>
             <p>
                 Le French Café is a casual French restaurant and café serving breakfast, lunch, and pastries.
-                When you arrive, you'll be greeted with a smile and surrounded by the casual and fun French flare that is
+                When you arrive, you'll be greeted with a smile and surrounded by the casual and fun French flare that
+                is
                 Le French Café.
             </p>
 
@@ -150,16 +157,37 @@
         </article>
 
         <article>
-            <img src="images/cafe-chairs.jpg" alt="cafe chairs">
+            <img src="images/cafe-chairs.jpg" alt="cafe chairs" class="featured">
         </article>
     </section>
 
     <section class="highlight call-out">
         <h2>
-            Simple ingredients and French recipes that stand the test of time.
+            Serving French food with a smile.
         </h2>
     </section>
 
+    <section id="press">
+        <article>
+            <h2>Press</h2>
+            <p>
+                Le French Café is proud to be awarded CU and Boulder's Best of 2018 in the categories of Best New
+                Restaurant, Best Breakfast and Best Lunch.
+            </p>
+        </article>
+
+        <div class="showcase">
+            <a class="reference" href="http://www.coloradodaily.com/ci_31819966/cu-boulders-best-2018">
+                <img src="images/best-of-boulder-award.png" alt="Best of Boulder award">
+            </a>
+            <a class="reference" href="http://www.dailycamera.com/lifestyles/ci_31506670/le-french-cafe-boulder-classic-specialties">
+                <img src="images/dailycamera.png" alt="Daily Camera">
+            </a>
+            <a class="reference" href="http://www.coloradodaily.com/ci_31819966/cu-boulders-best-2018">
+                <img src="images/coloradodaily.png" alt="Colorado Daily">
+            </a>
+        </div>
+    </section>
 </main>
 </body>
 
