@@ -48,7 +48,7 @@ p {
 }
 
 p:not(:last-child) {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 nav {
@@ -66,7 +66,7 @@ nav {
 
 nav ul {
     text-align: center;
-    padding: 1.2rem 0;
+    padding: 2rem 0;
     margin-top: 1rem;
 
     border-top: 2px solid #979797;
@@ -80,7 +80,7 @@ nav li {
 }
 
 nav li:not(:last-child) {
-    margin-bottom: 1.2rem;
+    margin-bottom: 2rem;
 }
 
 nav a {
@@ -109,26 +109,21 @@ footer {
     margin-top: auto;
 }
 
-footer p {
+footer p:not(:last-child) {
     margin-bottom: 0;
 }
 
-header, .highlight {
-    background-color: #14AAA3;
-    color: white;
+header p {
+    text-align: center;
 }
 
 header, section {
-    padding: 2rem;
+    padding: 3rem;
     display: flex;
 }
 
-article {
-    margin-bottom: 2rem;
-}
-
 article:not(:last-child) {
-    margin-right: 2rem;
+    margin-right: 3rem;
 }
 
 section img {
@@ -146,6 +141,11 @@ dt {
 
 dd {
     margin-bottom: .8rem;
+}
+
+.highlight {
+    background-color: #14AAA3;
+    color: white;
 }
 
 .external-link {
@@ -200,6 +200,11 @@ dd {
     flex-direction: column;
 }
 
+#press article:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 3rem;
+}
+
 .showcase {
     display: flex;
 }
@@ -213,8 +218,8 @@ dd {
 }
 
 img.featured {
-    margin-bottom: -2rem;
-    margin-top: -4rem;
+    margin-bottom: -3rem;
+    margin-top: -3rem;
 }
 
 .description {
@@ -228,7 +233,7 @@ img.featured {
 }
 
 .call-out {
-    padding: 3rem;
+    padding: 5rem;
 }
 
 .call-out h2 {
@@ -237,7 +242,6 @@ img.featured {
 
 .call-out.primary {
     background-image: url("images/marble-background.jpg");
-    padding-bottom: 5rem;
 }
 
 .call-out.highlight h2 {
