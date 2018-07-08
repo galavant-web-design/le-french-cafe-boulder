@@ -200,6 +200,10 @@ dd {
     flex-direction: column;
 }
 
+#facebook {
+    flex: 0 0 500px;
+}
+
 #press article:not(:last-child) {
     margin-right: 0;
     margin-bottom: 3rem;
@@ -247,4 +251,82 @@ img.featured {
 .call-out.highlight h2 {
     text-align: right;
     width: 100%;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) and (min-width: 660px) {
+    #facebook {
+        flex: 0 0 250px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    body {
+        padding-left: 0;
+    }
+
+    nav {
+        display: none;
+    }
+
+    header, section {
+        padding: 1.5rem;
+        flex-direction: column;
+    }
+
+    article:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 1.5rem;
+    }
+
+    .photos {
+        flex-direction: row;
+        position: relative;
+    }
+
+    .mobile-menu {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mobile-menu a {
+        display: block;
+        padding: .5rem .9rem;
+        border-radius: 7px;
+        background-color: rgba(211, 25, 117, .8);
+
+        color: white;
+        font-family: 'Neue Aachen', serif;
+        font-size: 1.75rem;
+        text-decoration: none;
+    }
+
+    .description {
+        display: none;
+    }
+
+    .call-out {
+        padding: 2.5rem;
+    }
+
+    img.featured {
+        margin: 0 -1.5rem -1.5rem;
+        width: 100vw;
+    }
+
+    #about {
+        padding-right: 1.5rem;
+    }
+
+    #map {
+        height: 40%;
+    }
 }
