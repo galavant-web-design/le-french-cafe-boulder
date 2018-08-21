@@ -197,17 +197,17 @@ dd {
     padding-right: 0;
 }
 
-#press {
+.something-to-rename {
     flex-direction: column;
+}
+
+.something-to-rename article:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 3rem;
 }
 
 #facebook {
     flex: 0 0 500px;
-}
-
-#press article:not(:last-child) {
-    margin-right: 0;
-    margin-bottom: 3rem;
 }
 
 .showcase {
@@ -216,6 +216,10 @@ dd {
 
 .reference {
     flex: 1;
+}
+
+.reference a + p {
+    margin-top: 1rem;
 }
 
 .reference:not(:last-child) {
@@ -247,6 +251,13 @@ img.featured {
 
 .call-out.primary {
     background-image: url("images/marble-background.jpg");
+}
+
+.call-out.macarons {
+    background: url("images/macarons.jpg") center;
+    background-size: cover;
+    color: white;
+    height: 25rem;
 }
 
 .call-out.highlight h2 {
@@ -300,6 +311,23 @@ img.featured {
     .photos {
         flex-direction: row;
         position: relative;
+    }
+
+    .showcase {
+        flex-direction: column;
+    }
+
+    .reference {
+        text-align: center;
+    }
+
+    .reference img {
+        width: 50%;
+    }
+
+    .reference:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 1.5rem;
     }
 
     .mobile-menu {
