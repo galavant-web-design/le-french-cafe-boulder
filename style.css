@@ -114,6 +114,10 @@ footer p:not(:last-child) {
     margin-bottom: 0;
 }
 
+footer a {
+    text-decoration: underline;
+}
+
 header p {
     text-align: center;
 }
