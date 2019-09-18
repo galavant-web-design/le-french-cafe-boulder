@@ -294,6 +294,10 @@ img.featured {
         position: absolute;
     }
 
+    .mobile-hidden {
+        display: none;
+    }
+
     .social {
         padding: 0;
     }
@@ -342,6 +346,7 @@ img.featured {
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
     }
 
     .mobile-menu a {
@@ -354,6 +359,10 @@ img.featured {
         font-family: 'Neue Aachen', serif;
         font-size: 1.75rem;
         text-decoration: none;
+    }
+
+    .mobile-menu a:not(:last-child) {
+        margin-bottom: 1rem;
     }
 
     .description {
