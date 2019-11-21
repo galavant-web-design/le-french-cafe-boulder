@@ -201,11 +201,11 @@ dd {
     padding-right: 0;
 }
 
-.something-to-rename {
+.stacked {
     flex-direction: column;
 }
 
-.something-to-rename article:not(:last-child) {
+.stacked article:not(:last-child) {
     margin-right: 0;
     margin-bottom: 3rem;
 }
