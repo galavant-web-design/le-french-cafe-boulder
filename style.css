@@ -153,6 +153,11 @@ dd {
     color: white;
 }
 
+.banner {
+    padding: 1rem 3rem;
+    font-weight: 700;
+}
+
 .external-link {
     position: relative;
 }
