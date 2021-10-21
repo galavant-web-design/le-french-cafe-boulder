@@ -232,18 +232,18 @@ dd {
 
 .showcase {
     display: flex;
+    gap: 1rem;
 }
 
 .reference {
     flex: 1;
+
+    display: flex;
+    gap: 1rem;
 }
 
-.reference a + p {
-    margin-top: 1rem;
-}
-
-.reference:not(:last-child) {
-    margin-right: 3rem;
+.reference a, .reference p {
+    flex: 1;
 }
 
 img.featured {
@@ -293,6 +293,10 @@ img.featured {
     #facebook {
         flex: 0 0 250px;
     }
+
+    .showcase:not(.horizontal) {
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width: 660px) {
@@ -337,21 +341,8 @@ img.featured {
         position: relative;
     }
 
-    .showcase {
+    .showcase:not(.horizontal) {
         flex-direction: column;
-    }
-
-    .reference {
-        text-align: center;
-    }
-
-    .reference img {
-        width: 50%;
-    }
-
-    .reference:not(:last-child) {
-        margin-right: 0;
-        margin-bottom: 1.5rem;
     }
 
     .mobile-menu {
