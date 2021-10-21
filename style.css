@@ -136,10 +136,7 @@ header p {
 header, section {
     padding: 3rem;
     display: flex;
-}
-
-article:not(:last-child) {
-    margin-right: 3rem;
+    gap: 3rem;
 }
 
 section img {
@@ -289,13 +286,26 @@ img.featured {
     display: none;
 }
 
-@media screen and (max-width: 1000px) and (min-width: 660px) {
+@media screen and (max-width: 1000px) {
     #facebook {
         flex: 0 0 250px;
     }
 
+    header, section {
+        padding: 1.5rem;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
     .showcase:not(.horizontal) {
         flex-direction: column;
+    }
+
+    img.featured {
+        margin: 0 -1.5rem -1.5rem;
+        width: 100vw;
+        max-height: 25rem;
+        object-fit: cover;
     }
 }
 
@@ -326,23 +336,9 @@ img.featured {
         display: none;
     }
 
-    header, section {
-        padding: 1.5rem;
-        flex-direction: column;
-    }
-
-    article:not(:last-child) {
-        margin-right: 0;
-        margin-bottom: 1.5rem;
-    }
-
     .photos {
         flex-direction: row;
         position: relative;
-    }
-
-    .showcase:not(.horizontal) {
-        flex-direction: column;
     }
 
     .mobile-menu {
@@ -378,11 +374,6 @@ img.featured {
 
     .call-out {
         padding: 2.5rem;
-    }
-
-    img.featured {
-        margin: 0 -1.5rem -1.5rem;
-        width: 100vw;
     }
 
     #about {
