@@ -59,10 +59,40 @@ ul li {
     margin-left: 2rem;
 }
 
+.button {
+    background-color: white;
+    color: #14AAA3;
+    text-decoration: none;
+    font-weight: bold;
+
+    display: inline-block;
+    padding: .5rem .8rem;
+    margin: 0 .4rem;
+}
+
+.order-online {
+    position: absolute;
+    top: -5rem;
+
+    height: 5rem;
+    width: calc(100% - 14rem);
+    background-color: #14AAA3;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    margin-top: 5rem;
+}
+
 nav {
     display: flex;
     flex-direction: column;
     position: fixed;
+    top: 0;
     left: 0;
 
     width: 14rem;
@@ -322,6 +352,10 @@ img.featured {
         border-top: 2px solid #979797;
         bottom: 0;
         position: absolute;
+    }
+
+    .order-online {
+        width: 100%;
     }
 
     .mobile-hidden {
