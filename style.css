@@ -350,6 +350,7 @@ img.featured {
         width: 100vw;
         border-right: none;
         border-top: 2px solid #979797;
+        top: inherit;
         bottom: 0;
         position: absolute;
     }
