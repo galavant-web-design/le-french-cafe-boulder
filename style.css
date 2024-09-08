@@ -267,6 +267,7 @@ dd {
 
     display: flex;
     gap: 1rem;
+    max-width: 50%;
 }
 
 .reference a, .reference p {
@@ -300,11 +301,16 @@ img.featured {
     background-image: url("images/marble-background.jpg");
 }
 
-.call-out.macarons {
-    background: url("images/macarons.jpg") center;
+.call-out.sampler {
+    background: url("images/sampler.jpg") center;
     background-size: cover;
-    color: white;
     height: 25rem;
+    color: white;
+    text-shadow:
+            -2px -2px 0 black,
+             2px -2px 0 black,
+            -2px  2px 0 black,
+             2px  2px 0 black;
 }
 
 .call-out.highlight h2 {
