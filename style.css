@@ -232,6 +232,12 @@ dd {
 .photo {
     position: relative;
     flex: 1;
+
+}
+
+.photo img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
 }
 
 #map {
@@ -270,6 +276,15 @@ dd {
     max-width: 50%;
 }
 
+.reference img {
+    object-fit: contain;
+}
+
+.reference.border {
+    border: 1px solid black;
+    padding: 1rem;
+}
+
 .reference a, .reference p {
     flex: 1;
 }
@@ -306,11 +321,10 @@ img.featured {
     background-size: cover;
     height: 25rem;
     color: white;
-    text-shadow:
-            -2px -2px 0 black,
-             2px -2px 0 black,
-            -2px  2px 0 black,
-             2px  2px 0 black;
+    text-shadow: -2px -2px 0 black,
+    2px -2px 0 black,
+    -2px 2px 0 black,
+    2px 2px 0 black;
 }
 
 .call-out.highlight h2 {
@@ -403,6 +417,10 @@ img.featured {
         font-family: 'Neue Aachen', serif;
         font-size: 1.75rem;
         text-decoration: none;
+    }
+
+    .reference {
+        max-width: 100%;
     }
 
     .mobile-menu a:not(:last-child) {
